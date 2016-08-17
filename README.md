@@ -1,4 +1,6 @@
 # Hapi Cache Manager
+[![Build Status](https://travis-ci.org/franzip/hapi-cache-manager.svg?branch=master)](https://travis-ci.org/franzip/hapi-cache-manager)
+[![Coverage Status](https://coveralls.io/repos/github/franzip/hapi-cache-manager/badge.svg?branch=master)](https://coveralls.io/github/franzip/hapi-cache-manager?branch=master)
 
 [**Hapi**](https://github.com/hapijs/hapi) Cache Manager plugin
 
