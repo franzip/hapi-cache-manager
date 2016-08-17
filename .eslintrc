@@ -1,0 +1,7 @@
+{
+    "plugins": ["node"],
+    "extends": ["eslint-config-hapi"],
+    "rules": {
+        "indent": ["error", 2]
+    }
+}

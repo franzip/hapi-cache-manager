@@ -1,0 +1,49 @@
+{
+  "name": "hapi-cache-manager",
+  "description": "Manage your Hapi catbox cache through REST endpoints and server methods.",
+  "version": "1.0.0",
+  "author": "Francesco Pezzella <franzpezzella@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/franzip/hapi-cache-manager"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "hapi",
+    "plugin",
+    "cache",
+    "catbox",
+    "invalidation",
+    "statistics"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "hoek": "^4.0.2"
+  },
+  "peerDependencies": {
+    "hapi": ">=10.2.0"
+  },
+  "devDependencies": {
+    "code": "^3.0.2",
+    "coveralls": "^2.11.12",
+    "eslint": "^3.2.2",
+    "eslint-config-hapi": "^9.1.0",
+    "eslint-plugin-node": "^2.0.0",
+    "hapi": "^14.0.0",
+    "json-server": "^0.8.17",
+    "lab": "^10.2.0",
+    "request": "^2.74.0"
+  },
+  "scripts": {
+    "test": "lab -a code -t 100 -L -n eslint",
+    "test-cov-html": "lab -a code -L -n eslint -r lcov -o coverage.html",
+    "coveralls": "lab -r lcov | ./node_modules/.bin/coveralls"
+  },
+  "bugs": {
+    "url": "https://github.com/franzip/hapi-cache-manager/issues"
+  },
+  "homepage": "https://github.com/franzip/hapi-cache-manager",
+  "license": "MIT"
+}
