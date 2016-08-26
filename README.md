@@ -1,5 +1,8 @@
 # Hapi Cache Manager
+[![NPM version](https://badge.fury.io/js/hapi-cache-manager.svg)](https://npmjs.org/package/hapi-cache-manager)
 [![Build Status](https://travis-ci.org/franzip/hapi-cache-manager.svg?branch=master)](https://travis-ci.org/franzip/hapi-cache-manager)
+[![Dependency Status](https://david-dm.org/franzip/hapi-cache-manager.svg)](https://david-dm.org/franzip/hapi-cache-manager)
+[![DevDependency Status](https://david-dm.org/franzip/hapi-cache-manager/dev-status.svg)](https://david-dm.org/franzip/hapi-cache-manager?type=dev)
 [![Coverage Status](https://coveralls.io/repos/github/franzip/hapi-cache-manager/badge.svg?branch=master)](https://coveralls.io/github/franzip/hapi-cache-manager?branch=master)
 
 [**Hapi**](https://github.com/hapijs/hapi) Cache Manager plugin

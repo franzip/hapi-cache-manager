@@ -30,11 +30,11 @@
     "code": "^3.0.2",
     "coveralls": "^2.11.12",
     "eslint": "^3.2.2",
-    "eslint-config-hapi": "^9.1.0",
+    "eslint-config-hapi": "^10.0.0",
     "eslint-plugin-node": "^2.0.0",
     "hapi": "^14.0.0",
     "json-server": "^0.8.17",
-    "lab": "^10.2.0",
+    "lab": "^11.0.1",
     "request": "^2.74.0"
   },
   "scripts": {
