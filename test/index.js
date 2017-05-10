@@ -118,11 +118,11 @@ before((done) => {
     }
   ]);
 
-  server.initialize((err) => {
+  server.register(require('../'), (err) => {
 
     expect(err).to.not.exists();
 
-    server.register(require('../'), (err) => {
+    server.initialize((err) => {
 
       expect(err).to.not.exists();
 
@@ -314,5 +314,12 @@ describe('Cache manager', () => {
         done();
       });
     });
+  });
+
+  it('exposes the plugin options', (done) => {
+
+    expect(server.plugins['hapi-cache-manager'].options).to.exist();
+    done();
+
   });
 });
