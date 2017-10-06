@@ -96,7 +96,7 @@ before((done) => {
             body: request.payload,
             json: true
           },
-            (err, res, body) => reply(err || body)
+          (err, res, body) => reply(err || body)
           );
         }
       }
@@ -113,7 +113,7 @@ before((done) => {
             body: request.payload,
             json: true
           },
-            (err, res, body) => reply(err || body)
+          (err, res, body) => reply(err || body)
           );
         }
       }
