@@ -12,6 +12,7 @@ Manage your [**Catbox**](https://github.com/hapijs/catbox) cache through REST en
 ### Plugin options
 
 - `namespace` - (Default: `cache`) Namespace for methods registered by the plugin.
+- `dependencies` - (Default: `[]`) An array of plugin name strings that must be registered before cache manager
 - `invalidate` - Cache invalidation options object
     - `path` - (Default: `/cache/invalidate`) Server endpoint to expose through DELETE method
     - `auth` - (Default: `false`) [**Hapi auth strategy**](https://github.com/hapijs/hapi/blob/master/API.md#serverauthstrategyname-scheme-mode-options) to use for cache invalidation endpoint
