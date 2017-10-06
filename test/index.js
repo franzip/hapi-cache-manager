@@ -24,6 +24,18 @@ server.connection();
 let response;
 let apiServer;
 
+const testPlugin = {
+  register: (srv, options, next) => {
+
+    next();
+  }
+};
+
+testPlugin.register.attributes = {
+  name: 'testPlugin',
+  version: '1.0.0'
+};
+
 before((done) => {
 
   server.method([
@@ -118,7 +130,10 @@ before((done) => {
     }
   ]);
 
-  server.register(require('../'), (err) => {
+  server.register([
+    testPlugin,
+    { register: require('../'), options: { dependencies: 'testPlugin' } }
+  ], (err) => {
 
     expect(err).to.not.exists();
 
@@ -126,10 +141,7 @@ before((done) => {
 
       expect(err).to.not.exists();
 
-      apiServer = jsonServer.listen(3000, () => {
-
-        done();
-      });
+      apiServer = jsonServer.listen(3000, done);
     });
   });
 });
@@ -319,6 +331,8 @@ describe('Cache manager', () => {
   it('exposes the plugin options', (done) => {
 
     expect(server.plugins['hapi-cache-manager'].options).to.exist();
+    expect(server.plugins['hapi-cache-manager'].options.dependencies).to.equal('testPlugin');
+    expect(Object.keys(server.registrations)).to.equal(['testPlugin', 'hapi-cache-manager']);
     done();
 
   });
