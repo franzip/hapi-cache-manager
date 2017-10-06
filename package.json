@@ -20,7 +20,7 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "hoek": "^5.0.0",
+    "hoek": "^4.2.0",
     "joi": "^11.1.1"
   },
   "peerDependencies": {
