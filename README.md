@@ -31,15 +31,16 @@ server.connection({ port: 3000 });
 
 server.register({
     register: CacheManager,
-    options: {                        // default options 
-        namespace: 'cache',           // server methods namespace
+    options: {                         // default options
+        namespace: 'cache',            // server methods namespace
+        dependencies: []               // plugin dependencies
         invalidate: {
-          path: 'cache/invalidate',   // cache invalidation endpoint
-          auth: false                 // cache invalidation auth strategy
+          path: 'cache/invalidate',    // cache invalidation endpoint
+          auth: false                  // cache invalidation auth strategy
         },
         statistics: {
-          path: 'cache/statistics',   // cache invalidation endpoint
-          auth: false                 // cache invalidation auth strategy
+          path: 'cache/statistics',    // cache invalidation endpoint
+          auth: false                  // cache invalidation auth strategy
         }
     }
 }, (err) => {
