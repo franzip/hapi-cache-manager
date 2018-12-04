@@ -17,29 +17,29 @@
     "statistics"
   ],
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "dependencies": {
-    "hoek": "^4.2.0",
-    "joi": "^11.1.1"
+    "hoek": "^6.1.2",
+    "joi": "^14.3.0"
   },
   "peerDependencies": {
     "hapi": ">=10.2.0"
   },
   "devDependencies": {
     "code": "^4.1.0",
-    "coveralls": "^3.0.0",
-    "eslint": "^4.8.0",
-    "eslint-config-hapi": "^10.0.0",
-    "eslint-plugin-node": "^5.2.0",
-    "hapi": "^16.1.1",
-    "json-server": "^0.12.0",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.9.0",
+    "eslint-config-hapi": "^12.0.0",
+    "eslint-plugin-node": "^8.0.0",
+    "hapi": "^16.7.0",
+    "json-server": "^0.14.0",
     "lab": "^14.3.1",
-    "request": "^2.81.0"
+    "request": "^2.88.0"
   },
   "scripts": {
-    "test": "lab -a code -t 100 -L -n eslint",
-    "test-cov-html": "lab -a code -L -n eslint -r lcov -o coverage.html",
+    "test": "lab -n eslint",
+    "test-cov-html": "lab -n eslint -r lcov -o coverage.html",
     "coveralls": "lab -r lcov | ./node_modules/.bin/coveralls"
   },
   "bugs": {

@@ -5,6 +5,7 @@ const Code = require('code');
 const Hapi = require('hapi');
 const JsonServer = require('json-server');
 const Request = require('request');
+
 const lab = exports.lab = Lab.script();
 
 const expect = Code.expect;
