@@ -33,7 +33,7 @@ server.register({
     register: CacheManager,
     options: {                         // default options
         namespace: 'cache',            // server methods namespace
-        dependencies: []               // plugin dependencies
+        dependencies: [],              // plugin dependencies
         invalidate: {
           path: 'cache/invalidate',    // cache invalidation endpoint
           auth: false                  // cache invalidation auth strategy
@@ -67,16 +67,16 @@ You can get [cache statistics](https://github.com/hapijs/hapi/blob/master/API.md
 
 # get statistics for all methods
 curl http://localhost:3000/cache/statistics
-# { 
-#   'somemethod': { 
-#     sets: 0, gets: 2, hits: 1, stales: 0, generates: 1, errors: 0 
-#   }, 
+# {
+#   'somemethod': {
+#     sets: 0, gets: 2, hits: 1, stales: 0, generates: 1, errors: 0
+#   },
 #   'someothermethod': { ... } }
 
 # get statistics for a single method
 curl http://localhost:3000/cache/statistics\?name\=somemethod
-# { 
-#   sets: 0, gets: 3, hits: 2, stales: 0, generates: 1, errors: 0 
+# {
+#   sets: 0, gets: 3, hits: 2, stales: 0, generates: 1, errors: 0
 # }
 ```
 
