@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 - 2018-12-04
+### Changed
+- Update dependencies [#96efdce](https://github.com/franzip/hapi-cache-manager/commit/96efdcea5b1b779de3329078ed64067d6e42c5da)
+- Added husky hooks [#0f133cc](https://github.com/franzip/hapi-cache-manager/commit/0f133cc61cf722bea770d8a2dec788dc856ba07e)
+
 ## 1.2.0 - 2017-10-06
 ### Fixed
 - Allow passing dependencies on plugin registration ([@mshick](https://github.com/mshick) in [PR #2](https://github.com/franzip/hapi-cache-manager/pull/2))
